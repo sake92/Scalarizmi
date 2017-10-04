@@ -4,7 +4,7 @@ Algorithms and data structures, in Scala
 
 ## Sorting algorithms
 
-~Easier to harder (my opinion):
+~ easier to harder (my opinion):
 
-- Selection sort
-- Insertion sort
+- [Selection sort](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/sorting/InsertionSort.scala)
+- [Insertion sort](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/sorting/SelectionSort.scala)
