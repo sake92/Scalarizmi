@@ -4,27 +4,29 @@ import SortingHelpers._
 
 /**
  * Time complexity: O( n^2 ) <br>
- * Uses FIRST element as ALREADY SORTED SUBARRAY. <br>
- * Adds rest of elements to that subarray AT THE CORRECT POSITION. <br>
+ * Swaps adjacent elements if necessary. <br>
+ * Biggest element "bubbles" to one end of array... <br>
  *
  * @author Sake
  *
  */
-object InsertionSort extends SortingAlgorithm {
+object BubbleSort extends SortingAlgorithm {
 
-  override def name = "Insertion sort"
+  override def name = "Bubble sort"
 
   override def sort[T](array: Array[T])(implicit ord: Ordering[T]): Array[T] = {
     import ord._
 
     val arrayLength = array.length
-    var i = 1
+    var i = 0
     var j = 0
     while (i < arrayLength) {
-      j = i
-      while (j > 0 && array(j - 1) > array(j)) {
-        array.swap(j - 1, j)
-        j = j - 1
+      j = 0
+      while (j < arrayLength - 1 - i) {
+        if (array(j) > array(j + 1)) {
+          array.swap(j, j + 1)
+        }
+        j = j + 1
       }
       i = i + 1
     }
@@ -32,4 +34,3 @@ object InsertionSort extends SortingAlgorithm {
   }
 
 }
-

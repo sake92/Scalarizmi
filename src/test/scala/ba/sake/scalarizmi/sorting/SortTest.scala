@@ -7,7 +7,7 @@ import scala.util.Random
 
 class SortTest extends FlatSpec with Matchers {
 
-  val sortAlgorithms = Vector(InsertionSort, SelectionSort)
+  val sortAlgorithms = Vector(InsertionSort, SelectionSort, MergeSort, BubbleSort)
   val NumIterations = 100
   val NumElements = 500
 
