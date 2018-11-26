@@ -13,7 +13,8 @@ Algorithms and data structures, in Scala
 
 ## Maximum subarray
 See [wiki](https://en.wikipedia.org/wiki/Maximum_subarray_problem) for more details.  
-Gist of the problem is to find a subarray with maximum sum of its elements.  
+Gist of the problem is to find a subarray with maximum sum of its elements. 
+
 - When all elements are positive, solution is trivially the sum of all elements
 - When all elements are negative, solution is trivially the largest element
 - Only interesting case is when there are mixed numbers, solution has to start with a positive number (kinda obvious)
