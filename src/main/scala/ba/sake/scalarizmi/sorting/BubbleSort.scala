@@ -1,16 +1,16 @@
 package ba.sake.scalarizmi.sorting
 
-import SortingHelpers._
-
 /**
  * Time complexity: O( n^2 ) <br>
  * Swaps adjacent elements if necessary. <br>
  * Biggest element "bubbles" to one end of array... <br>
  *
+ *
  * @author Sake
  *
  */
 object BubbleSort extends SortingAlgorithm {
+  import SortingAlgorithm._
 
   override def name = "Bubble sort"
 

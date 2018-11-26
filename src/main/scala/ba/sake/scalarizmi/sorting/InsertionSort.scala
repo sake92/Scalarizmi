@@ -1,16 +1,16 @@
 package ba.sake.scalarizmi.sorting
 
-import SortingHelpers._
-
 /**
  * Time complexity: O( n^2 ) <br>
  * Uses FIRST element as ALREADY SORTED SUBARRAY. <br>
  * Adds rest of elements to that subarray AT THE CORRECT POSITION. <br>
  *
+ *
  * @author Sake
  *
  */
 object InsertionSort extends SortingAlgorithm {
+  import SortingAlgorithm._
 
   override def name = "Insertion sort"
 
@@ -32,4 +32,3 @@ object InsertionSort extends SortingAlgorithm {
   }
 
 }
-

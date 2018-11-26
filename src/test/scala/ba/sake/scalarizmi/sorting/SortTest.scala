@@ -1,13 +1,16 @@
 package ba.sake.scalarizmi.sorting
 
+import ba.sake.scalarizmi.sorting.impls.SelectionSort
+
 import scala.concurrent.duration._
 import org.scalatest.FlatSpec
 import org.scalatest.Matchers
+
 import scala.util.Random
 
 class SortTest extends FlatSpec with Matchers {
 
-  val sortAlgorithms = Vector(InsertionSort, SelectionSort, MergeSort, BubbleSort)
+  val Algorithms = Vector(InsertionSort, SelectionSort, MergeSort, BubbleSort)
   val NumIterations = 100
   val NumElements = 500
 
@@ -18,7 +21,7 @@ class SortTest extends FlatSpec with Matchers {
   def getArray = unsortedArray.clone
 
   // do the tests
-  for (alg <- sortAlgorithms) {
+  for (alg <- Algorithms) {
     alg.name should "sort array properly" in {
 
       // run once just to see if it works

@@ -1,15 +1,15 @@
 package ba.sake.scalarizmi.sorting
 
-import SortingHelpers._
-
 /**
  * Time complexity: O( n^2 ) <br>
  * Finds NEXT MINIMAL element and switches it with CURRENT element. <br>
  *
- * @author Sake
+  *
+  * @author Sake
  *
  */
 object SelectionSort extends SortingAlgorithm {
+  import SortingAlgorithm._
 
   override def name = "Selection sort"
 
@@ -37,4 +37,3 @@ object SelectionSort extends SortingAlgorithm {
   }
 
 }
-

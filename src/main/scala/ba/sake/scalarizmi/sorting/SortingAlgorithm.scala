@@ -10,3 +10,15 @@ trait SortingAlgorithm {
   def name = getClass.getName
 
 }
+
+object SortingAlgorithm {
+  
+  implicit class ArraySortOps[T](array: Array[T]) {
+    
+    def swap(i: Int, j: Int): Unit = {
+      val temp = array(i)
+      array(i) = array(j)
+      array(j) = temp
+    }
+  }
+}

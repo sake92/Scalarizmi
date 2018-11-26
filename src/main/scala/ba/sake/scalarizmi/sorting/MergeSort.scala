@@ -1,7 +1,5 @@
 package ba.sake.scalarizmi.sorting
 
-import SortingHelpers._
-
 /**
  * Time complexity: O( n*log(n) ) <br>
  * Divide & conquer. <br>
