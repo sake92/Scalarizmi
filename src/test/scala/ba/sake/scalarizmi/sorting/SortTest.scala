@@ -1,7 +1,5 @@
 package ba.sake.scalarizmi.sorting
 
-import ba.sake.scalarizmi.sorting.impls.SelectionSort
-
 import scala.concurrent.duration._
 import org.scalatest.FlatSpec
 import org.scalatest.Matchers
