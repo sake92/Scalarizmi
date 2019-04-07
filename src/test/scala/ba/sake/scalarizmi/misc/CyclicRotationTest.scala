@@ -20,5 +20,5 @@ class CyclicRotationTest extends FlatSpec {
       }
     }
   }
-  
+
 }
