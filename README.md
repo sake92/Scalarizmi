@@ -1,10 +1,13 @@
 # Scalarizmi
 Algorithms and data structures, in Scala
 
+## Misc (mainly from Codility)
+
+- [Binary gap](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/misc/BinaryGap.scala)
+- [Cyclic rotation](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/misc/CyclicRotation.scala)
+- [Odd occurences](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/misc/OddOccurrencesInArray.scala)
 
 ## Sorting algorithms
-
-Solutions, ~easier to harder (IMHO):
 
 - [Insertion sort](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/sorting/InsertionSort.scala)
 - [Selection sort](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/sorting/SelectionSort.scala)
