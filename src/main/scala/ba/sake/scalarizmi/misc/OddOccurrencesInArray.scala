@@ -9,6 +9,7 @@ trait OddOccurrencesInArray {
 }
 
 object OddOccurrencesInArraySolution1 extends OddOccurrencesInArray {
+
   def solution(a: Array[Int]): Int = {
     val occurs = mutable.Map.empty[Int, Int].withDefaultValue(0)
     for (n <- a) {

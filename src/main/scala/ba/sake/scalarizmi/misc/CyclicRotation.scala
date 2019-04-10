@@ -6,6 +6,7 @@ trait CyclicRotation {
 }
 
 object CyclicRotation1 extends CyclicRotation {
+
   def solution(a: Array[Int], k: Int): Array[Int] = {
     if (a.length <= 1) a
     else {
@@ -16,6 +17,7 @@ object CyclicRotation1 extends CyclicRotation {
 }
 
 object CyclicRotation2 extends CyclicRotation {
+
   def solution(a: Array[Int], k: Int): Array[Int] = {
     if (a.length <= 1) a
     else {
