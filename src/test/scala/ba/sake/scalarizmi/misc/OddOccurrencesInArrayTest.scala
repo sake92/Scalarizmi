@@ -1,7 +1,7 @@
 package ba.sake.scalarizmi.misc
 
-import org.scalatest._
 import org.scalatest.Matchers._
+import org.scalatest._
 
 class OddOccurrencesInArrayTest extends FlatSpec {
 

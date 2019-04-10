@@ -1,9 +1,8 @@
 package ba.sake.scalarizmi.sorting
 
-import scala.concurrent.duration._
-import org.scalatest.FlatSpec
-import org.scalatest.Matchers
+import org.scalatest.{FlatSpec, Matchers}
 
+import scala.concurrent.duration._
 import scala.util.Random
 
 class SortTest extends FlatSpec with Matchers {

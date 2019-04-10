@@ -3,7 +3,7 @@ package ba.sake.scalarizmi.misc
 import scala.collection.mutable.Stack
 
 object DijkstraTwoStackEvaluation extends App {
-  
+
   val c = 'f'
   val cccc = '\u0000'
 

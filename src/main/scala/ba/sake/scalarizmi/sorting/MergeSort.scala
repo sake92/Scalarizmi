@@ -1,17 +1,17 @@
 package ba.sake.scalarizmi.sorting
 
 /**
- * Time complexity: O( n*log(n) ) <br>
- * Divide & conquer. <br>
- * Recursively calls itself, divides problem onto simplest ones: <br>
- * <ul>
- * 	<li>Two arrays with one element, trivial sort, just compare them</li>
- * 	<li>One array with one element, sorted already :p</li>
- * </ul>
- *
- * @author Sake
- *
- */
+  * Time complexity: O( n*log(n) ) <br>
+  * Divide & conquer. <br>
+  * Recursively calls itself, divides problem onto simplest ones: <br>
+  * <ul>
+  * <li>Two arrays with one element, trivial sort, just compare them</li>
+  * <li>One array with one element, sorted already :p</li>
+  * </ul>
+  *
+  * @author Sake
+  *
+  */
 object MergeSort extends SortingAlgorithm {
 
   override def name = "Merge sort"

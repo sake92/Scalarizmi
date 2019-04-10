@@ -1,6 +1,6 @@
 package ba.sake.scalarizmi.misc
 
-// TASK: Find longest sequence of zeros in binary representation of an integer.
+// Find longest sequence of zeros in binary representation of an integer.
 trait BinaryGap {
   def solution(n: Int): Int
 }

@@ -1,6 +1,6 @@
 package ba.sake.scalarizmi.misc
 
-// TASK: rotate array right k places
+// Rotate array right k places
 trait CyclicRotation {
   def solution(a: Array[Int], k: Int): Array[Int]
 }
