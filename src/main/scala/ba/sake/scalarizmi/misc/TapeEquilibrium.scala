@@ -2,6 +2,7 @@ package ba.sake.scalarizmi.misc
 
 // Find minimum absolute difference
 // between sums of left and right subarray
+// NOTE: Array always has 2 elements minimum!
 trait TapeEquilibrium {
   def solution(a: Array[Int]): Int
 }
