@@ -17,6 +17,10 @@ project/project/
 # Intellij
 .idea/
 
+# Bloop, Metals
+.bloop/
+.metals/
+
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
