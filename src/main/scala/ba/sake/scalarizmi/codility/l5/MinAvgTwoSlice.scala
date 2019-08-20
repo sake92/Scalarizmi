@@ -20,6 +20,7 @@ Proof is done.
 // a.sliding(2) and once a.sliding(3)
  */
 object MinAvgTwoSlice1 extends MinAvgTwoSlice {
+
   def solution(a: Array[Int]): Int = {
     if (a.length == 2) 0
     else {

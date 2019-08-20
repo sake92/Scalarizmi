@@ -7,8 +7,9 @@ trait GenomicRangeQuery {
 // - count number of ONES, if there's one -> 1
 // same for 2,3,4
 // - count is "sum of ones"
-import scala.collection.mutable
 object GenomicRangeQuery1 extends GenomicRangeQuery {
+  import scala.collection.mutable
+
   private val Nucleotides = Map('A' -> 1, 'C' -> 2, 'G' -> 3, 'T' -> 4)
 
   def solution(s: String, p: Array[Int], q: Array[Int]): Array[Int] = {

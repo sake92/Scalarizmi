@@ -1,7 +1,5 @@
 package ba.sake.scalarizmi.codility.l2
 
-import scala.collection.mutable
-
 // TASK: Find the only unpaired integer in array
 // array is not empty!
 trait OddOccurrencesInArray {
@@ -9,6 +7,7 @@ trait OddOccurrencesInArray {
 }
 
 object OddOccurrencesInArraySolution1 extends OddOccurrencesInArray {
+  import scala.collection.mutable
 
   def solution(a: Array[Int]): Int = {
     val occurs = mutable.Map.empty[Int, Int].withDefaultValue(0)

@@ -1,7 +1,6 @@
 package ba.sake.scalarizmi.codility.l9
 
 trait MaxDoubleSliceSum {
-
   def solution(a: Array[Int]): Int
 }
 

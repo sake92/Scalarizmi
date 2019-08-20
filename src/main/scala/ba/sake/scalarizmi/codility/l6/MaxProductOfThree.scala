@@ -38,7 +38,7 @@ object MaxProductOfThree1 extends MaxProductOfThree {
     else first2Last
   }
 
-  /// by sorting
+  // maybe by sorting also?
   def solution2(a: Array[Int]): Int = {
     val sortedArray = a.sorted
     val lastThree = sortedArray.takeRight(3).fold(1)(_ * _)

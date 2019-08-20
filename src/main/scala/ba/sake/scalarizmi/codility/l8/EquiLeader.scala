@@ -1,7 +1,5 @@
 package ba.sake.scalarizmi.codility.l8
 
-import scala.collection.mutable.Map
-
 trait EquiLeader {
   def solution(a: Array[Int]): Int
 }
@@ -14,6 +12,7 @@ trait EquiLeader {
 // n/2:n/2  => in one of two subarrays... :)
 // - partial-sums approach was used to count the leader element by indices
 object EquiLeader1 extends EquiLeader {
+  import scala.collection.mutable.Map
 
   def solution(a: Array[Int]): Int = {
 
@@ -62,8 +61,9 @@ object EquiLeader1 extends EquiLeader {
 
 // 55% "brute force"
 object EquiLeader2 extends EquiLeader {
-  def solution(a: Array[Int]): Int = {
+  import scala.collection.mutable.Map
 
+  def solution(a: Array[Int]): Int = {
     var count = 0
     for (i <- 1 until a.length) {
 

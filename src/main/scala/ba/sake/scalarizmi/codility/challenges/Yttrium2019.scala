@@ -1,13 +1,12 @@
 package ba.sake.scalarizmi.codility.challenges
 
-import scala.collection.mutable
-
 // Find the shortest substring of S that, after removal, leaves S containing exactly K different characters.
 trait Yttrium2019 {
   def solution(s: String, k: Int): Int
 }
 
 object Yttrium2019_1 extends Yttrium2019 {
+  import scala.collection.mutable
 
   def solution(s: String, k: Int): Int = {
 

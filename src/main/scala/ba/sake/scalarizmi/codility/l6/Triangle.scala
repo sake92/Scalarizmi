@@ -9,11 +9,9 @@ object Triangle1 extends Triangle {
   def solution(a: Array[Int]): Int = {
     val positive = a.filterNot(_ <= 0)
 
-    if (positive.size < 3) 0
+    if (positive.length < 3) 0
     else {
       val sorted = positive.sorted
-      println(sorted.toList)
-
       val has = sorted.sliding(3).find {
         case Array(p, q, r) =>
           val pqSum = p + q
@@ -27,7 +25,7 @@ object Triangle1 extends Triangle {
             BigInt(q) + BigInt(r) > BigInt(p)
           }
       }
-      println(has.map(_.toList))
+
       if (has.isDefined) 1 else 0
     }
   }
