@@ -17,8 +17,7 @@ class MaximumSubarrayTest extends FlatSpec with Matchers {
       for ((expected, array) <- Arrays) {
         val result @ (leftIndex, rightIndex, sum) = alg.sort(array)
         result shouldBe expected
-        info(
-          s"Maximum subarray is ${array.slice(leftIndex, rightIndex + 1).mkString(",")}")
+        info(s"Maximum subarray is ${array.slice(leftIndex, rightIndex + 1).mkString(",")}")
       }
     }
   }

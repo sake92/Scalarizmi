@@ -10,7 +10,7 @@ class MaxDoubleSliceSumTest extends FlatSpec {
   Solutions.foreach { solution =>
     solution.toString should "find maximum sum of double slice" in {
       List(
-        Array(3, 2, 6, -1, 4, 5, -1, 2)-> 17
+        Array(3, 2, 6, -1, 4, 5, -1, 2) -> 17
       ).foreach {
         case (arr, expected) =>
           val sol = solution.solution(arr)
