@@ -6,8 +6,9 @@ trait NumberOfDiscIntersections {
 
 // we count how many circles are "active" when an event occurs
 // (new circle starts or old ends)
-import scala.collection.mutable.ListBuffer
+
 object NumberOfDiscIntersections1 extends NumberOfDiscIntersections {
+  import scala.collection.mutable.ListBuffer // IDK, coulda/shoulda use ArrayBuffer
 
   def solution(a: Array[Int]): Int = {
     if (a.size < 2) return 0
