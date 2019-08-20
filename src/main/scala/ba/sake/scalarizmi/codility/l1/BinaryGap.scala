@@ -37,9 +37,8 @@ object BinaryGap2 extends BinaryGap {
     val nAsBinary = n.toBinaryString.reverse.dropWhile(_ == '0').reverse // drop trailing zeros
 
     val consecZerosGroups = nAsBinary
-      .split("1+")
-      . // split by ones
-      sortBy(-_.length) // sort by length descending
+      .split("1+") // split by ones
+      .sortBy(-_.length) // sort by length descending
 
     if (consecZerosGroups.isEmpty) 0
     else consecZerosGroups(0).length
