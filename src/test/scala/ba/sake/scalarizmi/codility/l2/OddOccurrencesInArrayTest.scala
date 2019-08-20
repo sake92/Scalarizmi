@@ -13,9 +13,10 @@ class OddOccurrencesInArrayTest extends FlatSpec {
         Array(9, 3, 9, 3, 9, 7, 9) -> 7,
         Array(7, 3, 7, 3, 9, 7, 9) -> 7,
         Array(5) -> 5
-      ).foreach { case (array, expected) =>
-        val sol = solution.solution(array)
-        sol should equal(expected)
+      ).foreach {
+        case (array, expected) =>
+          val sol = solution.solution(array)
+          sol should equal(expected)
       }
     }
   }

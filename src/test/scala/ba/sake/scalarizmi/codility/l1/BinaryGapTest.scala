@@ -14,9 +14,10 @@ class BinaryGapTest extends FlatSpec {
         "10100100001" -> 4,
         "10100010100" -> 3,
         "00010100000" -> 1
-      ).foreach { case (n, expected) =>
-        val sol = solution.solution(Integer.parseInt(n, 2))
-        sol should equal(expected)
+      ).foreach {
+        case (n, expected) =>
+          val sol = solution.solution(Integer.parseInt(n, 2))
+          sol should equal(expected)
       }
     }
   }

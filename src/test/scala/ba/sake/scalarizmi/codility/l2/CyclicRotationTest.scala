@@ -14,9 +14,10 @@ class CyclicRotationTest extends FlatSpec {
         (Array(1, 2, 3, 4), 4) -> Array(1, 2, 3, 4),
         (Array(5, -1000), 1) -> Array(-1000, 5),
         (Array.empty[Int], 0) -> Array.empty[Int]
-      ).foreach { case ((arr, k), expected) =>
-        val sol = solution.solution(arr, k)
-        sol should equal(expected)
+      ).foreach {
+        case ((arr, k), expected) =>
+          val sol = solution.solution(arr, k)
+          sol should equal(expected)
       }
     }
   }

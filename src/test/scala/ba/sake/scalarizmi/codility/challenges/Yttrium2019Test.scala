@@ -15,11 +15,11 @@ class Yttrium2019Test extends FlatSpec {
         ("zaaaa", 1) -> 1,
         ("aaaa", 2) -> -1,
         ("b", 1) -> 0
-      ).foreach { case ((str, k), expected) =>
-        val sol = solution.solution(str, k)
-        sol should equal(expected)
+      ).foreach {
+        case ((str, k), expected) =>
+          val sol = solution.solution(str, k)
+          sol should equal(expected)
       }
     }
   }
 }
-

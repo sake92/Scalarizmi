@@ -12,9 +12,10 @@ class FrogJmpTest extends FlatSpec {
       List(
         (10, 85, 30) -> 3,
         (5, 2, 10) -> 0
-      ).foreach { case ((x, y, d), expected) =>
-        val sol = solution.solution(x, y, d)
-        sol should equal(expected)
+      ).foreach {
+        case ((x, y, d), expected) =>
+          val sol = solution.solution(x, y, d)
+          sol should equal(expected)
       }
     }
   }

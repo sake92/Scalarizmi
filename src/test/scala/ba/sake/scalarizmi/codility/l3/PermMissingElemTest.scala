@@ -14,9 +14,10 @@ class PermMissingElemTest extends FlatSpec {
         Array(1, 2, 3, 5) -> 4,
         Array(1) -> 2,
         Array(2) -> 1
-      ).foreach { case (array, expected) =>
-        val sol = solution.solution(array)
-        sol should equal(expected)
+      ).foreach {
+        case (array, expected) =>
+          val sol = solution.solution(array)
+          sol should equal(expected)
       }
     }
   }

@@ -12,9 +12,10 @@ class TapeEquilibriumTest extends FlatSpec {
       List(
         Array(3, 1, 2, 4, 3) -> 1,
         Array(1, 2) -> 1
-      ).foreach { case (array, expected) =>
-        val sol = solution.solution(array)
-        sol should equal(expected)
+      ).foreach {
+        case (array, expected) =>
+          val sol = solution.solution(array)
+          sol should equal(expected)
       }
     }
   }

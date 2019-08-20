@@ -35,10 +35,10 @@ class SortTest extends FlatSpec with Matchers {
           totalNanos += endTimeNanos - startTimeNanos
         }
         val avgMillis = (totalNanos / NumIterations).nanoseconds.toNanos.toDouble / 1000
-        info(f"Average time for <${alg.name}> to sort $NumElements elements is $avgMillis%3.3f millis")
+        info(
+          f"Average time for <${alg.name}> to sort $NumElements elements is $avgMillis%3.3f millis")
       }
     }
   }
 
 }
-
