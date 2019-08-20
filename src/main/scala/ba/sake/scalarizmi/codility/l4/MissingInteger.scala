@@ -6,7 +6,7 @@ trait MissingInteger {
 }
 
 object MissingInteger1 extends MissingInteger {
-  
+
   def solution(a: Array[Int]): Int = {
     val hasN = Array.fill[Boolean](1000000)(false)
     for (elem <- a) {

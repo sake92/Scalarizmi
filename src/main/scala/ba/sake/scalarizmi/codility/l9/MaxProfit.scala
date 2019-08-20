@@ -2,15 +2,13 @@ package ba.sake.scalarizmi.codility.l9
 
 object MaxProfitApp extends App {
   println(
-
-  )
+    )
 }
-
 
 trait MaxProfit {
 
   def solution(a: Array[Int]): Int
-  }
+}
 
 // - move minimum price dinamically if we find better
 // - calculate new possible max diff... :)
@@ -35,7 +33,7 @@ object MaxProfit1 extends MaxProfit {
   }
 }
 
-object MaxProfit2 extends MaxProfit{
+object MaxProfit2 extends MaxProfit {
 
   def solution(a: Array[Int]): Int = {
     val length = a.length
@@ -60,7 +58,7 @@ object MaxProfit2 extends MaxProfit{
       if (maxCurrentSum < 0) { // if we go negative, it's better to start from 0
         maxCurrentSum = 0
       }
-         }
+    }
     maxTotalSum
   }
 }

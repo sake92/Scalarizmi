@@ -12,9 +12,9 @@ object DivideAndConquer extends MaximumSubarrayAlgorithm {
       (low, high, array(low)) // base case: only one element
     } else {
       val mid = (low + high) / 2
-      val maxLeft@(_, _, sumLeft) = maxSubarray(array, low, mid)
-      val maxRight@(_, _, sumRight) = maxSubarray(array, mid + 1, high)
-      val maxMiddle@(_, _, sumMiddle) = maxMiddleSubarray(array, low, mid, high)
+      val maxLeft @ (_, _, sumLeft) = maxSubarray(array, low, mid)
+      val maxRight @ (_, _, sumRight) = maxSubarray(array, mid + 1, high)
+      val maxMiddle @ (_, _, sumMiddle) = maxMiddleSubarray(array, low, mid, high)
 
       if (sumLeft >= sumRight && sumLeft >= sumMiddle) maxLeft
       else if (sumRight >= sumLeft && sumRight >= sumMiddle) maxRight
@@ -22,7 +22,10 @@ object DivideAndConquer extends MaximumSubarrayAlgorithm {
     }
   }
 
-  private def maxMiddleSubarray(array: Array[Int], low: Int, mid: Int, high: Int): (Int, Int, Int) = {
+  private def maxMiddleSubarray(array: Array[Int],
+                                low: Int,
+                                mid: Int,
+                                high: Int): (Int, Int, Int) = {
 
     var leftIndex = -1
     var rightIndex = -1

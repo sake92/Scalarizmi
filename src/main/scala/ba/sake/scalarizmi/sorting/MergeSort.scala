@@ -21,7 +21,8 @@ object MergeSort extends SortingAlgorithm {
     mergeSort(array, 0, array.length - 1)
   }
 
-  private def mergeSort[T](array: Array[T], low: Int, high: Int)(implicit ord: Ordering[T]): Array[T] = {
+  private def mergeSort[T](array: Array[T], low: Int, high: Int)(
+      implicit ord: Ordering[T]): Array[T] = {
     if (low < high) {
       val mid = (low + high) / 2
       mergeSort(array, low, mid)
@@ -32,7 +33,8 @@ object MergeSort extends SortingAlgorithm {
     }
   }
 
-  private def merge[T](array: Array[T], low: Int, mid: Int, high: Int)(implicit ord: Ordering[T]): Array[T] = {
+  private def merge[T](array: Array[T], low: Int, mid: Int, high: Int)(
+      implicit ord: Ordering[T]): Array[T] = {
     import ord._
 
     // copy subarrays

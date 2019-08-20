@@ -34,11 +34,11 @@ object BinaryGap1 extends BinaryGap {
 object BinaryGap2 extends BinaryGap {
 
   def solution(n: Int): Int = {
-    val nAsBinary = n.toBinaryString
-      .reverse.dropWhile(_ == '0').reverse // drop trailing zeros
+    val nAsBinary = n.toBinaryString.reverse.dropWhile(_ == '0').reverse // drop trailing zeros
 
-    val consecZerosGroups = nAsBinary.
-      split("1+"). // split by ones
+    val consecZerosGroups = nAsBinary
+      .split("1+")
+      . // split by ones
       sortBy(-_.length) // sort by length descending
 
     if (consecZerosGroups.isEmpty) 0

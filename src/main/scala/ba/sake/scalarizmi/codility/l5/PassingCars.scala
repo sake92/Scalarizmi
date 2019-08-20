@@ -12,7 +12,7 @@ object PassingCars1 extends PassingCars {
     // until we see a zero, then add that to the total
     var tmpCount = 0
     var totalCount = 0
-    for (elem <- a.reverse) { 
+    for (elem <- a.reverse) {
       if (elem == 1)
         tmpCount += 1
       else {

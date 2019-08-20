@@ -11,14 +11,13 @@ object DijkstraTwoStackEvaluation extends App {
     evaluate(" ( 1 + ( 2 * sqrt ( 4 ) ) ) ") // 5
   )
 
-
   def evaluate(input: String): Double = {
     val ops = new Stack[String]
     val vals = new Stack[Double]
     for (c <- input.split("\\s+").filterNot(_.trim.isEmpty)) {
       val s = c.toString
       s match {
-        case "(" | " " => // ignore
+        case "(" | " "                      => // ignore
         case "+" | "-" | "*" | "/" | "sqrt" => ops.push(s)
         case ")" =>
           val op = ops.pop

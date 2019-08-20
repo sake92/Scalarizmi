@@ -23,7 +23,8 @@ object Zirconium2019_1 extends Zirconium2019 {
   def solution(a: Array[Int], b: Array[Int], f: Int): Int = {
 
     val frontendVsBackend =
-      a.zip(b).map { case (fr, ba) => (fr, ba, fr - ba) } // find differences (frontend-backend)
+      a.zip(b)
+        .map { case (fr, ba) => (fr, ba, fr - ba) } // find differences (frontend-backend)
         .sortBy(-_._3) // order by difference (front vs back)
 
     val (front, back) = frontendVsBackend.splitAt(f)

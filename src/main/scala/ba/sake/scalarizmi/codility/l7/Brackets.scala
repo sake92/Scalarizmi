@@ -30,4 +30,3 @@ object Brackets1 extends Brackets {
     else 0
   }
 }
-

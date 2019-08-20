@@ -20,7 +20,7 @@ object NumberOfDiscIntersections1 extends NumberOfDiscIntersections {
       var right = i + n
       if (left > i) left = Int.MinValue // if overflow
       if (right < i) right = Int.MaxValue // if overflow
-      events += (left -> 1)   // circle start
+      events += (left -> 1) // circle start
       events += (right -> -1) // circle end
     }
 

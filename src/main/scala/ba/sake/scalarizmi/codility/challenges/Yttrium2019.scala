@@ -19,12 +19,14 @@ object Yttrium2019_1 extends Yttrium2019 {
       (leftChars ++ rightChars).toSet
     }
 
-    val results = allCharCombinations.toSet.map { diffChars: Set[Char] =>
-      possibleSolution(s, k, diffChars)
-    }.toVector.sorted
+    val results = allCharCombinations.toSet
+      .map { diffChars: Set[Char] =>
+        possibleSolution(s, k, diffChars)
+      }
+      .toVector
+      .sorted
 
-    results.dropWhile(_ < 0)
-      .headOption.getOrElse(-1)
+    results.dropWhile(_ < 0).headOption.getOrElse(-1)
   }
 
   private def possibleSolution(s: String, k: Int, diffChars: Set[Char]): Int = {
@@ -38,8 +40,7 @@ object Yttrium2019_1 extends Yttrium2019 {
       } else false
     }
 
-    val res = s.dropWhile(dropF)
-      .reverse.dropWhile(dropF)
+    val res = s.dropWhile(dropF).reverse.dropWhile(dropF)
 
     if (diffCharsRemaining.size == k) res.length // if remaining==k solution is ok
     else -1
