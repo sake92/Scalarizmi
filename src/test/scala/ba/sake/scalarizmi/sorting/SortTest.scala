@@ -7,11 +7,12 @@ import scala.util.Random
 
 class SortTest extends FlatSpec with Matchers {
 
-  val Algorithms = Vector(InsertionSort, SelectionSort, MergeSort, BubbleSort)
+  val Algorithms =
+    Vector(InsertionSort, SelectionSort, MergeSort, BubbleSort, QuickSort, CountingSort, RadixSort)
   val NumIterations = 100
   val NumElements = 500
 
-  val unsortedArray = Array.fill(NumElements)(Random.nextInt())
+  val unsortedArray = Array.fill(NumElements)(Random.nextInt(NumElements))
   val sortedArray = unsortedArray.sorted
 
   // copies array because some algorithms sort in-place while others don't
