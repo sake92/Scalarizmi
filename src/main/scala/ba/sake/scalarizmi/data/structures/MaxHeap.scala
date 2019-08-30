@@ -1,4 +1,4 @@
-package ba.sake.scalarizmi.misc
+package ba.sake.scalarizmi.data.structures
 
 object MaxHeapTest extends App {
 
@@ -90,10 +90,10 @@ class MaxHeap(capacity: Int, arr: Array[Int]) {
     val leftIdx = leftIndex(i)
     val rightIdx = rightIndex(i)
     var maxIdx = i
-    if (values(leftIdx) > values(maxIdx) && leftIdx < size) {
+    if (leftIdx < size && values(leftIdx) > values(maxIdx)) {
       maxIdx = leftIdx
     }
-    if (values(rightIdx) > values(maxIdx) && rightIdx < size) {
+    if (leftIdx < size && values(rightIdx) > values(maxIdx)) {
       maxIdx = rightIdx
     }
     if (maxIdx != i) { // not ok, must push it down

@@ -9,7 +9,7 @@ trait MaxCounters {
 object MaxCounters1 extends MaxCounters {
 
   def solution(n: Int, a: Array[Int]): Array[Int] = {
-    var counters = Array.fill(n)(0)
+    val counters = Array.fill(n)(0)
     var maxCurrent = 0
     var didReset = false // avoid unnecessary resets, perfy
     for (operation <- a) {
