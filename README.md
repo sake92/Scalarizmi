@@ -8,10 +8,10 @@ Algorithms and data structures, in Scala
 
 ## Sorting algorithms
 
-- [Insertion sort](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/sorting/InsertionSort.scala)
-- [Selection sort](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/sorting/SelectionSort.scala)
-- [Bubble sort](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/sorting/BubbleSort.scala)
-- [Merge sort](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/sorting/MergeSort.scala)
+- comparison sorts:  SelectionSort, InsertionSort, MergeSort, BubbleSort, QuickSort
+- other sorts: CountingSort, RadixSort
+
+ [Code is here](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/sorting)
 
 ## Misc
 - [subarray with max sum, Divide & Conquer](https://github.com/sake92/Scalarizmi/blob/master/src/main/scala/ba/sake/scalarizmi/misc/max_subarray/DivideAndConquer.scala)
