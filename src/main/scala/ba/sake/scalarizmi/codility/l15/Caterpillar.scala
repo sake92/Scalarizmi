@@ -27,17 +27,4 @@ class Caterpillar {
     }
     found
   }
-
-  /*
-  def caterpillarMethod(A, s):
-  2 n = len(A)
-  3 front, total = 0, 0
-  4 for back in xrange(n):
-    5 while (front < n and total + A[front] <= s):
-    6 total += A[front]
-  7 front += 1
-  8 if total == s:
-    9 return True
-  10 total -= A[back]
-    11 return False*/
 }
