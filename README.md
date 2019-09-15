@@ -3,7 +3,7 @@ Algorithms and data structures, in Scala
 
 ## Codility
 
-- [lessons 1 to 10](https://github.com/sake92/Scalarizmi/tree/master/src/main/scala/ba/sake/scalarizmi/codility)
+- [lessons](https://github.com/sake92/Scalarizmi/tree/master/src/main/scala/ba/sake/scalarizmi/codility)
 - [challenges](https://github.com/sake92/Scalarizmi/tree/master/src/main/scala/ba/sake/scalarizmi/codility/challenges)
 
 ## Sorting algorithms
