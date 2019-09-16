@@ -3,7 +3,7 @@
 ```scala
 val array = Array(1, 2, 3)
 val ps = Array.ofDim[Int](array.length + 1) // Array(0, 1, 3, 6)
-for (i <- prefixSums.indices.tail)
+for (i <- ps.indices.tail)
   ps(i) = ps(i - 1) + array(i - 1)
 
 def sumBetween(i: Int, j: Int) = 
