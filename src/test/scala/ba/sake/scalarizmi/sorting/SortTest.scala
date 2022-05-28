@@ -1,11 +1,11 @@
 package ba.sake.scalarizmi.sorting
 
-import org.scalatest.{FlatSpec, Matchers}
+import ba.sake.scalarizmi.TestUtils._
 
 import scala.concurrent.duration._
 import scala.util.Random
 
-class SortTest extends FlatSpec with Matchers {
+class SortTest extends FlatSpec {
 
   val Algorithms =
     Vector(InsertionSort, SelectionSort, MergeSort, BubbleSort, QuickSort, CountingSort, RadixSort)

@@ -19,7 +19,7 @@ class CountTriangles {
         while (k < a.length) {
           println(s"try ($i,$j,$k)")
           if (isTriangle(a(i), a(j), a(k))) {
-            println(s"YEP: ($i,$j,$k):", a(i), a(j), a(k))
+            println((s"YEP: ($i,$j,$k):", a(i), a(j), a(k)))
             count += 1
           }
           k += 1

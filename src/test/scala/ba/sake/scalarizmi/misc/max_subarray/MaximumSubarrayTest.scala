@@ -1,8 +1,8 @@
 package ba.sake.scalarizmi.misc.max_subarray
 
-import org.scalatest.{FlatSpec, Matchers}
+import ba.sake.scalarizmi.TestUtils._
 
-class MaximumSubarrayTest extends FlatSpec with Matchers {
+class MaximumSubarrayTest extends FlatSpec {
 
   val Algorithms = Vector(DivideAndConquer)
 

@@ -2,11 +2,11 @@ package ba.sake.scalarizmi.codility.l16
 
 object TieRopes extends App {
   val t = new TieRopes
-  println(
+  println((
     t.solution(4, Array(1, 2, 3, 4, 1, 1, 3)), // 3
     t.solution(4, Array(1, 2, 3, 4, 1, 1, 3, 1)), // 3, tests edge case
     t.solution(4, Array(1)) // 0
-  )
+  ))
 }
 
 class TieRopes {

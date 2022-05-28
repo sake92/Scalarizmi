@@ -2,11 +2,11 @@ package ba.sake.scalarizmi.codility.l15
 
 object countDist extends App {
   val c = new CountDistinctSlices
-  println(
+  println((
     c.solution(6, Array(3, 4, 5, 5, 2)), // 9
     c.solution(6, Array(3)), // 1
     c.solution(6, Array()) // 0
-  )
+  ))
 }
 
 /*

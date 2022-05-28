@@ -1,14 +1,47 @@
 package ba.sake.scalarizmi.data.structures
 
-object binnnnnn extends App {
-  val bin = new BinaryTree(1, new BinaryTree(2, null, null), null)
-  println(bin)
+import pprint.*
+
+@main def binTreeMain(): Unit = {
+  val bin = BinaryTree(
+    BinaryTree(
+      None,
+      10,
+      None
+    ),
+    50,
+    BinaryTree(
+      BinaryTree(
+        None,
+        60,
+        None
+      ),
+      70,
+      BinaryTree(
+        None,
+        90,
+        None
+      )
+    )
+  )
+  pprintln(bin)
+
+  pprintln(BinaryTree.search(bin, 70))
+  pprintln(BinaryTree.search(bin, 77))
 }
 
-class BinaryTree(
-    val value: Int,
-    val left: BinaryTree,
-    val right: BinaryTree
-) {
-  override def toString: String = s"BinTree(value=$value, left=$left, right=$right)"
+case class BinaryTree(
+    left: Option[BinaryTree],
+    value: Int,
+    right: Option[BinaryTree]
+)
+
+object BinaryTree {
+  def apply(left: BinaryTree, value: Int, right: BinaryTree): BinaryTree =
+    BinaryTree(Some(left), value, Some(right))
+  
+  def search(bt: BinaryTree, x: Int): Option[Int] =
+    if x == bt.value then Some(x)
+    else if x < bt.value then bt.left.flatMap(search(_, x))
+    else bt.right.flatMap(search(_, x))
 }

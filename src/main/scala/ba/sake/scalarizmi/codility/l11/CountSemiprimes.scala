@@ -48,6 +48,6 @@ object CountSemiprimes {
       if (result(j) == 0)
         result(j) = i
     }
-    result
+    result.toSeq
   }
 }

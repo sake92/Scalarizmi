@@ -1,7 +1,6 @@
 package ba.sake.scalarizmi.codility.l1
 
-import org.scalatest.Matchers._
-import org.scalatest._
+import ba.sake.scalarizmi.TestUtils._
 
 class BinaryGapTest extends FlatSpec {
 

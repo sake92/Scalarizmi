@@ -23,6 +23,6 @@ class Erathostenes {
       result(j) = false
     }
 
-    result
+    result.toSeq
   }
 }

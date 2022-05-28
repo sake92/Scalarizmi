@@ -2,13 +2,13 @@ package ba.sake.scalarizmi.codility.l15
 
 object abssssDist extends App {
   val a = new AbsDistinct
-  println(
+  println((
     a.solution(Array(-5, -3, -1, 0, 0, 3, 6, 6)), // 5
     a.solution(Array(Int.MinValue, Int.MinValue + 1, Int.MaxValue)), // 2, coz MinValue+1==MaxValue
     a.solution(Array(2)), // 1
     a.solution(Array(2, 2, 2)), // 1
     a.solution(Array(2, 2, 2, 2)) // 1
-  )
+  ))
 }
 
 class AbsDistinct {

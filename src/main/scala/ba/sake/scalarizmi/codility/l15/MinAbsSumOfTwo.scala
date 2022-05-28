@@ -2,12 +2,12 @@ package ba.sake.scalarizmi.codility.l15
 
 object MinAbsSumOfTwo extends App {
   val s = new MinAbsSumOfTwo
-  println(
+  println((
     s.solution(Array(1, 4, -3)), // 1 = 4-3
     s.solution(Array(-8, 4, 5, -10, 3)), // 3 = 8-5
     s.solution(Array(5)), // 10 = 5+5
     s.solution(Array(5, 7, -5)) // 0 = 5-5
-  )
+  ))
 }
 
 class MinAbsSumOfTwo {

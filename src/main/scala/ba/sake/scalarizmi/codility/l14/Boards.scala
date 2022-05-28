@@ -2,11 +2,11 @@ package ba.sake.scalarizmi.codility.l14
 
 object boardsssss extends App {
   val b = new Boards
-  println(
+  println((
     b.boards(Array(0, 1, 1, 0, 1), 1), // 4 to cover all 4 with one board
     b.boards(Array(0, 1, 1, 0, 1), 2), // 2, coz 2 consecutive
     b.boards(Array(0, 1, 1, 0, 1), 3) // 1
-  )
+  ))
 }
 
 /*

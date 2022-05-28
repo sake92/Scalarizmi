@@ -24,7 +24,7 @@ class Factorization {
       tmp /= divisors(tmp)
     }
     factors += tmp // add prime that's left :)
-    factors
+    factors.toSeq
   }
 
   def smallestPrimeDivisors(n: Int): Seq[Int] = {
@@ -39,6 +39,6 @@ class Factorization {
         result(j) = i
     }
 
-    result
+    result.toSeq
   }
 }

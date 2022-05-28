@@ -19,7 +19,7 @@ object Yttrium2019_1 extends Yttrium2019 {
     }
 
     val results = allCharCombinations.toSet
-      .map { diffChars: Set[Char] =>
+      .map { (diffChars: Set[Char]) =>
         possibleSolution(s, k, diffChars)
       }
       .toVector

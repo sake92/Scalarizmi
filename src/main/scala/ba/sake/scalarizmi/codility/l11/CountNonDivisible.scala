@@ -1,10 +1,10 @@
 package ba.sake.scalarizmi.codility.l11
 
 object nondiv extends App {
-  println(
+  println((
     CountNonDivisible.solution(Array(3, 1, 2, 3, 6)).toList, //  [2, 4, 3, 2, 0]
     CountNonDivisible.solution(Array(2)).toList //  [0]
-  )
+  ))
 }
 
 // https://github.com/charles-wangkai/codility/blob/master/CountNonDivisible.java

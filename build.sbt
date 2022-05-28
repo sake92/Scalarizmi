@@ -2,8 +2,9 @@
 organization := "ba.sake"
 name := "scalarizmi"
 
-scalaVersion := "2.12.8"
+scalaVersion := "3.1.2"
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.0.5" % "test"
+  "com.lihaoyi" %% "pprint" % "0.7.3",
+  "org.scalatest" %% "scalatest" % "3.2.12" % "test"
 )

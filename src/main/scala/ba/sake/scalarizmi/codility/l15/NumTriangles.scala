@@ -17,7 +17,7 @@ class NumTriangles {
       for (j <- i + 1 until sticks.length - 1) { // from second to last-1
         var k = j + 1 // from third to last
         while (k < sticks.length && isTriangle(sticks(i), sticks(j), sticks(k))) {
-          println("YEP: ", sticks(i), sticks(j), sticks(k))
+          println(("YEP: ", sticks(i), sticks(j), sticks(k)))
           count += 1
           k += 1
         }
