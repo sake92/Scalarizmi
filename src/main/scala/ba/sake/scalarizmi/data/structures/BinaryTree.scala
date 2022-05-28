@@ -4,24 +4,12 @@ import pprint.*
 
 @main def binTreeMain(): Unit = {
   val bin = BinaryTree(
-    BinaryTree(
-      None,
-      10,
-      None
-    ),
+    BinaryTree(10),
     50,
     BinaryTree(
-      BinaryTree(
-        None,
-        60,
-        None
-      ),
+      BinaryTree(60),
       70,
-      BinaryTree(
-        None,
-        90,
-        None
-      )
+      BinaryTree(90)
     )
   )
   pprintln(bin)
@@ -39,7 +27,10 @@ case class BinaryTree(
 object BinaryTree {
   def apply(left: BinaryTree, value: Int, right: BinaryTree): BinaryTree =
     BinaryTree(Some(left), value, Some(right))
-  
+
+  def apply(value: Int): BinaryTree =
+    BinaryTree(None, value, None)
+
   def search(bt: BinaryTree, x: Int): Option[Int] =
     if x == bt.value then Some(x)
     else if x < bt.value then bt.left.flatMap(search(_, x))
