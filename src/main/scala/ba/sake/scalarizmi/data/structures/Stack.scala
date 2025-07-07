@@ -1,6 +1,6 @@
 package ba.sake.scalarizmi.data.structures
 
-object Stek extends App {
+@main def stackMain(): Unit = {
 
   val s = new Stack()
   s.push(5)
@@ -9,7 +9,7 @@ object Stek extends App {
   println(s.isEmpty)
   s.pop()
   println(s.isEmpty)
-  s.pop()
+  s.pop() // Underflow
 }
 
 class Stack(capacity: Int = 100) {

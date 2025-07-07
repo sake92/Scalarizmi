@@ -1,6 +1,7 @@
 package ba.sake.scalarizmi.data.structures
 
-object qqqqqq extends App {
+@main def queueMain(): Unit = {
+  
   val q = new Queue(4)
 
   for (i <- 1 to 3) {
@@ -21,8 +22,8 @@ class Queue(capacity: Int = 16) {
 
   private val values: Array[Int] = Array.ofDim(capacity)
 
-  private var head = 0 // take from the start, head
-  private var tail = 0 // insert at the end, tail
+  private var head = 0 // take from the start index, head
+  private var tail = 0 // insert at the end index, tail
 
   def enqueue(x: Int): Unit = {
     if (nextTail == head)

@@ -1,7 +1,7 @@
 package ba.sake.scalarizmi.codility.l2
 
 // TASK: Find the only unpaired integer in array
-// array is not empty!
+// - array is not empty!
 trait OddOccurrencesInArray {
   def solution(a: Array[Int]): Int
 }

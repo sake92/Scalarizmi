@@ -18,7 +18,7 @@ object TapeEquilibrium1 extends TapeEquilibrium {
     for (elem <- a.init) { // all except last !
       leftSum += elem
       val rightSum = totalSum - leftSum
-      val absDiff = Math.abs(leftSum - rightSum)
+      val absDiff = (leftSum - rightSum).abs
       if (absDiff < minAbsDiff) minAbsDiff = absDiff
     }
     minAbsDiff

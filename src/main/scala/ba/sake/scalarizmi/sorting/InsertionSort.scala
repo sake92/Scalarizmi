@@ -11,23 +11,19 @@ package ba.sake.scalarizmi.sorting
   */
 object InsertionSort extends SortingAlgorithm {
 
-  import SortingAlgorithm._
-
   override def name = "Insertion sort"
 
   override def sort[T](array: Array[T])(implicit ord: Ordering[T]): Array[T] = {
     import ord._
 
     val arrayLength = array.length
-    var i = 1
-    var j = 0
-    while (i < arrayLength) {
-      j = i
-      while (j > 0 && array(j - 1) > array(j)) {
+    for (i <- 0 until arrayLength) {
+      for {
+        j <- i until 0 by -1
+        if array(j - 1) > array(j)
+      } {
         array.swap(j - 1, j)
-        j = j - 1
       }
-      i = i + 1
     }
     array
   }

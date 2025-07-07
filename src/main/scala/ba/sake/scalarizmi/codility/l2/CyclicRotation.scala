@@ -27,3 +27,5 @@ object CyclicRotation2 extends CyclicRotation {
     }
   }
 }
+
+// orrrrr we could move one by one...

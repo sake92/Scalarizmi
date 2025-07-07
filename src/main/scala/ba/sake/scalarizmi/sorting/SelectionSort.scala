@@ -10,8 +10,6 @@ package ba.sake.scalarizmi.sorting
   */
 object SelectionSort extends SortingAlgorithm {
 
-  import SortingAlgorithm._
-
   override def name = "Selection sort"
 
   override def sort[T](array: Array[T])(implicit ord: Ordering[T]): Array[T] = {

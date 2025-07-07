@@ -10,12 +10,13 @@ trait PermMissingElem {
 object PermMissingElem1 extends PermMissingElem {
 
   // for an array of length 3,
-  // possible values are 1,2,3,4 (indices plus size of array, incremented by one)
+  // all possible values are [1,2,3,4]
+
   // then we just find the difference...
   // if there's no difference, means that array is empty, so we return 1
   def solution(a: Array[Int]): Int = {
-    val should = (a.indices :+ a.length).map(_ + 1)
-    val difference = should diff a
+    val should = a.indices.appended(a.length).map(_ + 1)
+    val difference = should.diff(a)
     difference.headOption.getOrElse(1)
   }
 }

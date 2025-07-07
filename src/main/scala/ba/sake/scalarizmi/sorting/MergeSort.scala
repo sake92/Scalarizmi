@@ -25,9 +25,9 @@ object MergeSort extends SortingAlgorithm {
       implicit ord: Ordering[T]): Array[T] = {
     if (low < high) {
       val mid = (low + high) / 2
-      mergeSort(array, low, mid)
-      mergeSort(array, mid + 1, high)
-      merge(array, low, mid, high)
+      mergeSort(array, low, mid)      // sort left half
+      mergeSort(array, mid + 1, high) // sort right half
+      merge(array, low, mid, high)    // marge halves
     } else {
       array
     }
@@ -38,6 +38,7 @@ object MergeSort extends SortingAlgorithm {
     import ord._
 
     // copy subarrays
+    // could've been just one array
     val left = array.slice(low, mid + 1)
     val right = array.slice(mid + 1, high + 1)
 

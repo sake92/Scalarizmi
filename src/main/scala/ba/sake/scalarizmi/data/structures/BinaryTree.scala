@@ -12,6 +12,7 @@ import pprint.*
       BinaryTree(90)
     )
   )
+
   pprintln(bin)
 
   pprintln(BinaryTree.search(bin, 70))
@@ -31,6 +32,7 @@ object BinaryTree {
   def apply(value: Int): BinaryTree =
     BinaryTree(None, value, None)
 
+  // you could also binary search a sorted Array, and hop with index=n/2 left or right...
   def search(bt: BinaryTree, x: Int): Option[Int] =
     if x == bt.value then Some(x)
     else if x < bt.value then bt.left.flatMap(search(_, x))

@@ -5,14 +5,13 @@ package ba.sake.scalarizmi.sorting
   * Time complexity: O( n^2 ), but mostly O( n*log(n) ) <br>
   * Merge sort but with additional improvement. <br>
   * Divides array to LEFT, PIVOT(one element), RIGHT. All elements in LEFT are < PIVOT, all in RIGHT are > PIVOT.
-  * So, when they're sorted, no need for merge step. :)
+  * So, when they're sorted, there is no need for merge step. :)
   *
   *
   * @author Sake
   *
   */
 object QuickSort extends SortingAlgorithm {
-  import SortingAlgorithm._
 
   override def name = "Quick sort"
 

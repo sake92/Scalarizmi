@@ -1,9 +1,9 @@
 package ba.sake.scalarizmi.sorting
 
 /**
-  * Time complexity: O( n^2 ) <br>
-  * Swaps adjacent elements if necessary. <br>
-  * Biggest element "bubbles" to one end of array... <br>
+  * Time complexity: `O( n^2 )`  
+  * Swaps adjacent elements if necessary. 
+  * Biggest element "bubbles" to one end of array... 
   *
   *
   * @author Sake
@@ -11,25 +11,18 @@ package ba.sake.scalarizmi.sorting
   */
 object BubbleSort extends SortingAlgorithm {
 
-  import SortingAlgorithm._
-
   override def name = "Bubble sort"
 
   override def sort[T](array: Array[T])(implicit ord: Ordering[T]): Array[T] = {
     import ord._
 
     val arrayLength = array.length
-    var i = 0
-    var j = 0
-    while (i < arrayLength) {
-      j = 0
-      while (j < arrayLength - 1 - i) {
+    for (i <- 0 until arrayLength) {
+      for (j <- 0 until arrayLength - 1 - i) {
         if (array(j) > array(j + 1)) {
           array.swap(j, j + 1)
         }
-        j = j + 1
       }
-      i = i + 1
     }
     array
   }

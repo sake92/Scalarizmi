@@ -1,5 +1,6 @@
 package ba.sake.scalarizmi.sorting
 
+// sorting in place, except for merge-sort
 trait SortingAlgorithm {
 
   def sort[T](array: Array[T])(implicit ord: Ordering[T]): Array[T]
@@ -8,18 +9,4 @@ trait SortingAlgorithm {
     * @return Name of the algorithm
     */
   def name = getClass.getName
-
-}
-
-object SortingAlgorithm {
-
-  implicit class ArraySortOps[T](array: Array[T]) {
-
-    def swap(i: Int, j: Int): Unit = {
-      val temp = array(i)
-      array(i) = array(j)
-      array(j) = temp
-    }
-  }
-
 }
